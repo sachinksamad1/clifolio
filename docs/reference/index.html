@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>~/dev/portfolio - John Doe</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;800;900&amp;family=Inter:wght@400;500;600&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "inverse-on-surface": "#ffecf4",
+                    "on-background": "#25181f",
+                    "on-secondary-fixed-variant": "#005144",
+                    "tertiary-container": "#bcae00",
+                    "outline": "#8a707e",
+                    "primary-fixed": "#ffd8ec",
+                    "primary-container": "#ff44cc",
+                    "surface-tint": "#b1008c",
+                    "on-primary-fixed": "#3b002d",
+                    "surface-container-low": "#fff0f5",
+                    "tertiary-fixed": "#f6e63c",
+                    "on-surface-variant": "#57404d",
+                    "error": "#ba1a1a",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-container-highest": "#f5dce7",
+                    "inverse-primary": "#ffaede",
+                    "on-tertiary-fixed": "#1f1c00",
+                    "secondary-fixed-dim": "#00dfc1",
+                    "tertiary-fixed-dim": "#d9c919",
+                    "secondary-container": "#26fedc",
+                    "on-tertiary-container": "#464100",
+                    "surface-bright": "#fff8f9",
+                    "on-tertiary-fixed-variant": "#4e4800",
+                    "surface-container": "#ffe8f2",
+                    "on-secondary-container": "#007261",
+                    "outline-variant": "#ddbecd",
+                    "surface-dim": "#ecd4df",
+                    "on-error-container": "#93000a",
+                    "secondary-fixed": "#26fedc",
+                    "primary": "#b1008c",
+                    "inverse-surface": "#3b2c34",
+                    "tertiary": "#686000",
+                    "on-tertiary": "#ffffff",
+                    "secondary": "#006b5b",
+                    "surface-variant": "#f5dce7",
+                    "on-secondary-fixed": "#00201a",
+                    "primary-fixed-dim": "#ffaede",
+                    "surface": "#fff8f9",
+                    "on-primary-fixed-variant": "#88006a",
+                    "surface-container-high": "#fae2ed",
+                    "on-secondary": "#ffffff",
+                    "on-primary-container": "#5a0046",
+                    "background": "#fff8f9",
+                    "on-primary": "#ffffff",
+                    "on-surface": "#25181f",
+                    "on-error": "#ffffff",
+                    "error-container": "#ffdad6"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "xs": "4px",
+                    "unit": "4px",
+                    "xl": "48px",
+                    "sm": "8px",
+                    "gutter": "24px",
+                    "margin": "32px",
+                    "md": "16px",
+                    "lg": "24px"
+            },
+            "fontFamily": {
+                    "headline-md": ["Space Grotesk"],
+                    "code-sm": ["monospace"],
+                    "body-md": ["Inter"],
+                    "body-lg": ["Inter"],
+                    "headline-xl": ["Space Grotesk"],
+                    "headline-lg": ["Space Grotesk"],
+                    "label-caps": ["Space Grotesk"]
+            },
+            "fontSize": {
+                    "headline-md": ["20px", {"lineHeight": "1.4", "fontWeight": "600"}],
+                    "code-sm": ["14px", {"lineHeight": "1.5", "fontWeight": "400"}],
+                    "body-md": ["16px", {"lineHeight": "1.5", "fontWeight": "400"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "headline-xl": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "headline-lg": ["32px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                    "label-caps": ["12px", {"lineHeight": "1", "letterSpacing": "0.1em", "fontWeight": "700"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body {
+            background-color: #fff8f9;
+            background-image: radial-gradient(#ddbecd 0.5px, transparent 0.5px);
+            background-size: 24px 24px;
+        }
+        .window-shadow {
+            box-shadow: 4px 4px 0px 0px rgba(37, 24, 31, 1);
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="font-body-md text-on-background">
+<!-- TopNavBar Shell -->
+<header class="bg-white dark:bg-zinc-950 docked full-width top-0 border-b-2 border-zinc-900 dark:border-zinc-800 sticky z-50">
+<nav class="flex justify-between items-center w-full px-6 h-14 max-w-[1280px] mx-auto">
+<div class="text-lg font-black text-zinc-900 dark:text-zinc-50 font-mono">
+                ~/dev/portfolio
+            </div>
+<div class="hidden md:flex items-center gap-8">
+<a class="font-space-grotesk font-bold uppercase tracking-tighter text-pink-600 dark:text-pink-400 border-b-2 border-pink-600 dark:border-pink-400 transition-all duration-75 active:translate-x-0.5 active:translate-y-0.5" href="#">root</a>
+<a class="font-space-grotesk font-bold uppercase tracking-tighter text-zinc-500 dark:text-zinc-400 hover:bg-pink-50 dark:hover:bg-pink-900/20 hover:text-pink-600 transition-all duration-75 active:translate-x-0.5 active:translate-y-0.5 px-2" href="#">projects</a>
+<a class="font-space-grotesk font-bold uppercase tracking-tighter text-zinc-500 dark:text-zinc-400 hover:bg-pink-50 dark:hover:bg-pink-900/20 hover:text-pink-600 transition-all duration-75 active:translate-x-0.5 active:translate-y-0.5 px-2" href="#">stack</a>
+<a class="font-space-grotesk font-bold uppercase tracking-tighter text-zinc-500 dark:text-zinc-400 hover:bg-pink-50 dark:hover:bg-pink-900/20 hover:text-pink-600 transition-all duration-75 active:translate-x-0.5 active:translate-y-0.5 px-2" href="#">logs</a>
+</div>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-zinc-900 dark:text-zinc-50 cursor-pointer" data-icon="terminal">terminal</span>
+<span class="material-symbols-outlined text-zinc-900 dark:text-zinc-50 cursor-pointer" data-icon="settings">settings</span>
+</div>
+</nav>
+</header>
+<main class="max-w-[1280px] mx-auto px-6 py-12">
+<!-- Hero Section -->
+<section class="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-24 items-center">
+<div class="space-y-6">
+<div class="inline-block px-3 py-1 bg-primary text-on-primary font-label-caps text-label-caps border-2 border-on-background">
+                    [ STATUS: ACTIVE ]
+                </div>
+<h1 class="font-headline-xl text-headline-xl text-on-background">
+                    Hello, I'm <span class="text-primary">John Doe</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-lg">
+                    A Software Engineer specializing in building robust, high-performance systems. I turn complex terminal logic into elegant digital experiences.
+                </p>
+<div class="flex gap-4">
+<button class="px-6 py-3 bg-secondary-container text-on-secondary-container border-2 border-on-background font-label-caps text-label-caps window-shadow hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all">
+                        VIEW_RECORDS
+                    </button>
+<button class="px-6 py-3 bg-white text-on-background border-2 border-on-background font-label-caps text-label-caps window-shadow hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all">
+                        CONTACT_ME
+                    </button>
+</div>
+</div>
+<!-- Developer Stats Terminal Window -->
+<div class="bg-white border-2 border-primary window-shadow overflow-hidden">
+<!-- Window Bar -->
+<div class="h-8 border-b-2 border-primary bg-primary-container/20 flex items-center px-4 justify-between">
+<div class="flex gap-1.5">
+<div class="w-3 h-3 rounded-full bg-[#FF5F56]"></div>
+<div class="w-3 h-3 rounded-full bg-[#FFBD2E]"></div>
+<div class="w-3 h-3 rounded-full bg-[#27C93F]"></div>
+</div>
+<div class="font-code-sm text-code-sm text-primary uppercase font-bold tracking-widest">
+                        jphn_doe_stats.json
+                    </div>
+</div>
+<!-- Window Content -->
+<div class="p-6 font-code-sm text-code-sm leading-relaxed text-on-background">
+<pre><code>{
+  <span class="text-primary">"name"</span>: <span class="text-secondary">"John Doe"</span>,
+  <span class="text-primary">"role"</span>: <span class="text-secondary">"Full Stack Developer"</span>,
+  <span class="text-primary">"location"</span>: <span class="text-secondary">"Earthling, Solis"</span>,
+  <span class="text-primary">"skills"</span>: [
+    <span class="text-secondary">"Rust"</span>, <span class="text-secondary">"TypeScript"</span>, 
+    <span class="text-secondary">"PostgreSQL"</span>, <span class="text-secondary">"Docker"</span>
+  ],
+  <span class="text-primary">"coffee_consumption"</span>: <span class="text-secondary">"CRITICAL"</span>,
+  <span class="text-primary">"status"</span>: <span class="text-secondary">"Searching for bugs..."</span>
+}</code></pre>
+</div>
+</div>
+</section>
+<!-- Bento Grid Projects -->
+<section class="mb-24">
+<div class="flex items-center gap-4 mb-8">
+<h2 class="font-headline-lg text-headline-lg uppercase">Selected_Projects</h2>
+<div class="flex-grow h-0.5 bg-on-background/10"></div>
+<div class="font-label-caps text-label-caps text-primary">[ 004 ]</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+<!-- Project 1: Large -->
+<div class="md:col-span-8 bg-white border-2 border-on-background window-shadow overflow-hidden group">
+<div class="h-8 border-b-2 border-on-background flex items-center px-4 justify-between">
+<div class="flex gap-1.5"><div class="w-2.5 h-2.5 rounded-full bg-on-background"></div><div class="w-2.5 h-2.5 rounded-full bg-on-background"></div><div class="w-2.5 h-2.5 rounded-full bg-on-background"></div></div>
+<div class="font-label-caps text-[10px] uppercase">PROJECT_01 // CORE_INFRA</div>
+</div>
+<div class="grid md:grid-cols-2 h-full">
+<div class="p-8 space-y-4">
+<h3 class="font-headline-md text-headline-md">NexusDB Engine</h3>
+<p class="text-on-surface-variant font-body-md">A distributed key-value store built in Rust for high-throughput messaging systems. Optimized for sub-millisecond latency.</p>
+<div class="flex flex-wrap gap-2">
+<span class="px-2 py-0.5 border border-on-background font-code-sm text-xs bg-surface-container">[ RUST ]</span>
+<span class="px-2 py-0.5 border border-on-background font-code-sm text-xs bg-surface-container">[ DISTRIBUTED ]</span>
+</div>
+</div>
+<div class="relative bg-zinc-100 border-l-2 border-on-background overflow-hidden min-h-[200px]">
+<img class="object-cover w-full h-full grayscale group-hover:grayscale-0 transition-all duration-300" data-alt="A futuristic server room with glowing blue and pink neon lights reflecting off glass surfaces and metal server racks. The image is clean, high-contrast, and fits a modern developer portfolio aesthetic with sharp lines and high technology atmosphere. The mood is precise and powerful." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDAzMwLas1gPQUWxdSDoRyr8KCQpooNlTfXqe9TINAOGAMZ7zZHJ2YYsHZ8kc7QevAOIeerIcWo0rQvgWDkS1BUN-MQlUMMrlQBk7-_6Iagg-gGuvSWwqE9sJ2ik7VBX3SVD3mb6VEBQ7ooftGEKVuzWT913047V8fxTICF43q3ibDHpJ5gDq6blmGFVzpyZ-aXbKHUxJFG1WRcqb17kIrCMXlMAvrTqqxlRlC_pAs3l169Yk3wuPWpeWnfVy3HFzeozFHmlGDnk-Y"/>
+</div>
+</div>
+</div>
+<!-- Project 2: Small -->
+<div class="md:col-span-4 bg-white border-2 border-secondary window-shadow overflow-hidden flex flex-col">
+<div class="h-8 border-b-2 border-secondary bg-secondary-container/10 flex items-center px-4 justify-between">
+<div class="flex gap-1.5"><div class="w-2.5 h-2.5 rounded-full bg-[#FF5F56]"></div><div class="w-2.5 h-2.5 rounded-full bg-[#FFBD2E]"></div><div class="w-2.5 h-2.5 rounded-full bg-[#27C93F]"></div></div>
+<div class="font-label-caps text-[10px] text-secondary">WEB_UI</div>
+</div>
+<div class="p-6 flex-grow flex flex-col justify-between">
+<div>
+<h3 class="font-headline-md text-headline-md mb-2">Synth-UI Kit</h3>
+<p class="text-on-surface-variant text-sm">Light-weight React library for terminal-inspired web interfaces.</p>
+</div>
+<div class="mt-4 flex justify-between items-end">
+<span class="font-code-sm text-xs text-secondary">[ v2.4.0 ]</span>
+<span class="material-symbols-outlined text-secondary" data-icon="open_in_new">open_in_new</span>
+</div>
+</div>
+</div>
+<!-- Project 3: Small -->
+<div class="md:col-span-4 bg-white border-2 border-tertiary window-shadow overflow-hidden flex flex-col">
+<div class="h-8 border-b-2 border-tertiary bg-tertiary-container/10 flex items-center px-4 justify-between">
+<div class="flex gap-1.5"><div class="w-2.5 h-2.5 rounded-full bg-on-background"></div><div class="w-2.5 h-2.5 rounded-full bg-on-background"></div><div class="w-2.5 h-2.5 rounded-full bg-on-background"></div></div>
+<div class="font-label-caps text-[10px] text-tertiary">CLI_TOOL</div>
+</div>
+<div class="p-6 flex-grow flex flex-col justify-between">
+<div>
+<h3 class="font-headline-md text-headline-md mb-2">Vortex Git</h3>
+<p class="text-on-surface-variant text-sm">Interactive visualization tool for complex Git histories and branch merges.</p>
+</div>
+<div class="mt-4 font-code-sm text-xs text-tertiary-container bg-on-background px-2 py-1">
+                            $ vortex --visualize
+                        </div>
+</div>
+</div>
+<!-- Project 4: Wide -->
+<div class="md:col-span-8 bg-white border-2 border-primary window-shadow overflow-hidden group">
+<div class="h-8 border-b-2 border-primary bg-primary-container/10 flex items-center px-4 justify-between">
+<div class="flex gap-1.5"><div class="w-2.5 h-2.5 rounded-full bg-[#FF5F56]"></div><div class="w-2.5 h-2.5 rounded-full bg-[#FFBD2E]"></div><div class="w-2.5 h-2.5 rounded-full bg-[#27C93F]"></div></div>
+<div class="font-label-caps text-[10px] text-primary">MOBILE_OS</div>
+</div>
+<div class="grid md:grid-cols-2 h-full">
+<div class="relative bg-zinc-100 border-r-2 border-primary overflow-hidden min-h-[200px] order-2 md:order-1">
+<img class="object-cover w-full h-full grayscale group-hover:grayscale-0 transition-all duration-300" data-alt="A sleek modern smartphone resting on a white minimalist desk next to a coding workstation. The phone screen displays a vibrant user interface with neon pink and cyan elements. The background is brightly lit, showcasing a clean and professional workspace for mobile app development and design." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBPrpzllS9kTFJWCehMKaVXn-n3yuoIJvCWt5PWjNLflCAic3zI_BYA1l7F_rknvo2lqoHA9thVLzKQfqWxrVxLjsLdbi-S6rPDmLYNCzRau6wAS5X7Egg7eBPT_N2jqTlVROHcPfS0NkVIXQ2AQC1fbLPraaRZIqtuf7Mi3rulbJ08lYSVUe263Fl2bfNkYKDFX4VjuJwjq9cf5LLFoBwBvcBgN1jsTbyicMnw-2rUVgYirSOrEkE0291XgdnUoOurVdZTKbntZtc"/>
+</div>
+<div class="p-8 space-y-4 order-1 md:order-2">
+<h3 class="font-headline-md text-headline-md">Pulse OS</h3>
+<p class="text-on-surface-variant font-body-md">A research-led mobile operating system interface focusing on minimalist notification management.</p>
+<button class="flex items-center gap-2 font-label-caps text-xs text-primary group-hover:underline">
+                                READ_CASE_STUDY <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Technical Stack -->
+<section class="mb-24">
+<div class="flex items-center gap-4 mb-8">
+<h2 class="font-headline-lg text-headline-lg uppercase">System_Stack</h2>
+<div class="flex-grow h-0.5 bg-on-background/10"></div>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+<div class="p-6 border-2 border-on-background bg-white window-shadow">
+<span class="material-symbols-outlined text-primary mb-2" data-icon="code">code</span>
+<p class="font-label-caps text-label-caps text-on-background">Languages</p>
+<p class="text-xs font-code-sm text-on-surface-variant mt-2">Rust, TS, Go, Python</p>
+</div>
+<div class="p-6 border-2 border-on-background bg-white window-shadow">
+<span class="material-symbols-outlined text-secondary mb-2" data-icon="database">database</span>
+<p class="font-label-caps text-label-caps text-on-background">Databases</p>
+<p class="text-xs font-code-sm text-on-surface-variant mt-2">Postgres, Redis, Mongo</p>
+</div>
+<div class="p-6 border-2 border-on-background bg-white window-shadow">
+<span class="material-symbols-outlined text-tertiary mb-2" data-icon="cloud">cloud</span>
+<p class="font-label-caps text-label-caps text-on-background">Cloud</p>
+<p class="text-xs font-code-sm text-on-surface-variant mt-2">AWS, K8s, Terraform</p>
+</div>
+<div class="p-6 border-2 border-on-background bg-white window-shadow">
+<span class="material-symbols-outlined text-primary mb-2" data-icon="architecture">architecture</span>
+<p class="font-label-caps text-label-caps text-on-background">Frameworks</p>
+<p class="text-xs font-code-sm text-on-surface-variant mt-2">React, Next.js, Axum</p>
+</div>
+</div>
+</section>
+<!-- Newsletter / Contact Mini -->
+<section class="mb-24">
+<div class="bg-surface-container-highest border-4 border-on-background p-10 relative overflow-hidden">
+<div class="absolute top-0 right-0 w-32 h-32 bg-primary/10 rotate-45 translate-x-16 -translate-y-16 border-2 border-primary"></div>
+<div class="relative z-10 max-w-2xl">
+<h2 class="font-headline-lg text-headline-lg mb-4">WANT_TO_COLLABORATE?</h2>
+<p class="font-body-md text-on-surface-variant mb-6">Drop your encrypted message here or follow my activity logs on GitHub. I'm always open to new system architecture challenges.</p>
+<div class="flex flex-col sm:flex-row gap-4">
+<input class="flex-grow bg-white border-2 border-on-background p-3 font-code-sm focus:outline-none focus:border-primary transition-colors" placeholder="YOUR_EMAIL@DOMAIN.COM" type="email"/>
+<button class="bg-on-background text-white px-8 py-3 font-label-caps text-label-caps hover:bg-primary transition-colors">
+                            SEND_INIT
+                        </button>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer Shell -->
+<footer class="bg-zinc-50 dark:bg-zinc-900 border-t-2 border-zinc-900 dark:border-zinc-800 border-dashed mt-20">
+<div class="flex flex-col md:flex-row justify-between items-center w-full px-8 py-10 max-w-[1280px] mx-auto gap-4">
+<div class="font-mono text-xs uppercase tracking-widest text-zinc-900 dark:text-zinc-100">
+                © 2026 SYSTEM_OPERATOR. ALL_RIGHTS_RESERVED.
+            </div>
+<div class="flex gap-8">
+<a class="font-mono text-xs uppercase tracking-widest text-zinc-500 dark:text-zinc-400 hover:text-pink-500 transition-colors duration-150" href="#">github</a>
+<a class="font-mono text-xs uppercase tracking-widest text-zinc-500 dark:text-zinc-400 hover:text-pink-500 transition-colors duration-150" href="#">linkedin</a>
+<a class="font-mono text-xs uppercase tracking-widest text-zinc-500 dark:text-zinc-400 hover:text-pink-500 transition-colors duration-150" href="#">source_code</a>
+</div>
+</div>
+</footer>
+</body></html>
