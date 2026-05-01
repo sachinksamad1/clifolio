@@ -2,6 +2,14 @@
 
 `clifolio` is a high-performance, visually striking developer portfolio template built with **Next.js 16**, **Tailwind CSS v4**, and **TypeScript**. It features a unique "CLI-meets-Brutalist" aesthetic, characterized by bold typography, Bento-style grids, and interactive terminal windows.
 
+## 🖼️ Preview
+
+| Dark Mode | Light Mode |
+|-----------|------------|
+| ![Dark Mode](./banners/Dark.png) | ![Light Mode](./banners/Light.png) |
+
+🔗 Full previews: [Dark](./banners/Dark-full.png) | [Light](./banners/Light-full.png)
+
 ## 🚀 Key Features
 
 - **Terminal UI Components**: Reusable `TerminalWindow`, `ProjectCard`, and `LogCard` components with "traffic light" controls and syntax highlighting.
